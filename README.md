@@ -35,7 +35,7 @@ int main()
 
 }
 ```
-* Run
+* Run  
 ![image](image/02.jpg)
 
 
@@ -61,6 +61,6 @@ func main() {
     fmt.Println(st, seed, uint16(seed))
 }
 ```
-* Run
+* Run  
 ![image](image/01.jpg)
 
