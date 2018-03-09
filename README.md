@@ -15,14 +15,16 @@ std::size_t h = string_hash("Hash me");
 #include <string.h>
 #include <hash.hpp> 
 #include <stdio.h>  
-boost::hash<std::string> hash_fn;
 int main()
 {
     std::string st = "get_t_user_info";
+
+    // Using Boost Library
+    boost::hash<std::string> hash_fn;
     std::size_t code = hash_fn("get_t_user_info");
     printf("%s %ld %u\n", st.c_str(), code,  (unsigned short)code);
 
-    // Get From Boost Source
+    // Get Same Result Without Boost Library
     std::size_t seed = 0;
     for(std::string::iterator it = st.begin(); it != st.end(); ++it)
     {
@@ -33,8 +35,8 @@ int main()
 
 }
 ```
-* 
-![image](image/01.jpg)
+* Run
+![image](image/02.jpg)
 
 
 
@@ -59,6 +61,6 @@ func main() {
     fmt.Println(st, seed, uint16(seed))
 }
 ```
-* 
-![image](image/02.jpg)
+* Run
+![image](image/01.jpg)
 
