@@ -2,7 +2,7 @@
 A go hash code like c++ boost hashcode
 
 ## Boost Hash Code
-http://www.boost.org/doc/libs/1_47_0/doc/html/hash.html(http://www.boost.org/doc/libs/1_47_0/doc/html/hash.html)
+http://www.boost.org/doc/libs/1_47_0/doc/html/hash.html
 ```c
 boost::hash<std::string> string_hash;
 std::size_t h = string_hash("Hash me");
@@ -14,7 +14,7 @@ std::size_t h = string_hash("Hash me");
 #include <iostream> 
 #include <string.h>
 #include <hash.hpp> 
- #include <stdio.h>  
+#include <stdio.h>  
 boost::hash<std::string> hash_fn;
 int main()
 {
@@ -33,7 +33,8 @@ int main()
 
 }
 ```
-![pic]/image/01.jpg)
+* 
+![image](image/01.jpg)
 
 
 
@@ -58,5 +59,6 @@ func main() {
     fmt.Println(st, seed, uint16(seed))
 }
 ```
-![pic]/image/02.jpg)
+* 
+![image](image/02.jpg)
 
